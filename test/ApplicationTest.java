@@ -1,5 +1,4 @@
 import org.junit.Test;
-import play.mvc.Content;
 import play.mvc.Result;
 
 import static org.fest.assertions.Assertions.assertThat;

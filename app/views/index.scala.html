@@ -2,6 +2,13 @@
 
 @main("Welcome to Play") {
 
-    @message
+    <script src='@routes.Assets.at("javascripts/index.min.js")'></script>
+
+    @helper.form(action = routes.Application.addBar()) {
+        <input name="name">
+        <input type="submit">
+    }
+
+    <ul id="bars"></ul>
 
 }
