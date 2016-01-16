@@ -6,6 +6,8 @@ import play.db.ebean.Model;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.index;
+import views.html.login;
+
 import java.util.List;
 import static play.libs.Json.toJson;
 
@@ -27,4 +29,7 @@ public class Application extends Controller {
         return ok(toJson(bars));
     }
 
+    public static Result login() {
+        return ok(login.render());
+    }
 }
