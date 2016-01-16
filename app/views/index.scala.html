@@ -4,6 +4,8 @@
 
     <script src='@routes.Assets.at("javascripts/index.min.js")'></script>
 
+    @message
+
     @helper.form(action = routes.Application.addBar()) {
         <input name="name">
         <input type="submit">

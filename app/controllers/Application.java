@@ -6,18 +6,13 @@ import play.db.ebean.Model;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.index;
-
 import java.util.List;
-
-
-//Time 9_YYgl65FLs
-
 import static play.libs.Json.toJson;
 
 public class Application extends Controller {
 
     public static Result index() {
-        return ok(index.render("hello play from java"));
+        return ok(index.render("Registration form"));
     }
 
     public static Result addBar() {
